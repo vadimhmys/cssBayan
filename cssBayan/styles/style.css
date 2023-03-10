@@ -4,4 +4,50 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #AAB0C8;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.bayan {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.bayan__item {
+    border: 1px solid #35225F;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.bayan__input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.bayan__input:checked ~ .bayan__content{
+    display: block;
+}
+
+.bayan__title {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.bayan__content {
+    display: none;
+    background-color: #697191;
+    padding: 10px 0;
+}
+
+.bayan__img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
 }
