@@ -17,23 +17,17 @@ body {
     margin: 20px auto;
 }
 
-.bayan:hover .bayan__title::after {
-    content: '';
-    display: block;
-    width: 7px;
-    height: 7px;
-    border-bottom: 2px solid #867BB3;
-    border-left: 2px solid #867BB3;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%) rotate(315deg);
-}
-
-.bayan:hover .bayan__title {
+.bayan:hover .bayan__title-text {
     color: #fff;
     transition: .3s;
     text-shadow: 2px 2px 2px #35225F;
+}
+
+.bayan:hover .bayan__title-icon {
+    display: block;
+    color: #fff;
+    opacity: 1;
+    transition: opacity .3s;
 }
 
 .bayan__item {
@@ -47,35 +41,38 @@ body {
 .bayan__input {
     appearance: none;
     -webkit-appearance: none;
-    width: 0;
-    height: 0;
-    position: absolute;
+    display: none;
 }
 
-.bayan__input:checked ~ .bayan__title{
+.bayan__input:checked ~ .bayan__title .bayan__title-text {
     color: #fff;
     text-shadow: 2px 2px 2px #35225F;
+}
+
+.bayan__input:checked ~ .bayan__title .bayan__title-icon {
+    transform: rotate(180deg);
 }
 
 .bayan__input:checked ~ .bayan__content{
     display: block;
 }
 
-.bayan__input:checked ~.bayan__title::after{
-    transform: translateY(-50%) rotate(135deg);
-}
-
 .bayan__title {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 15px;
     color: #000;
     transition: background .3s, color 0.3s;
-    position: relative;
 }
 
 .bayan__title:hover {
     cursor: pointer;
     background: #35225F;
+}
+
+.bayan__title-icon {
+    opacity: 0;
 }
 
 .bayan__content {
