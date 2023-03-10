@@ -21,6 +21,10 @@ body {
     border-radius: 5px;
 }
 
+.bayan__item:hover {
+    cursor: pointer;
+}
+
 .bayan__input {
     appearance: none;
     -webkit-appearance: none;
