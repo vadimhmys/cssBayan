@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -30,6 +32,7 @@ body {
 .bayan__input:checked ~ .bayan__label .meme__header{
     background-color: #35225F;
     color: #fff;
+    transition: .5s;
 }
 
  .bayan__input:checked ~ .bayan__label .meme__icon {
@@ -38,6 +41,10 @@ body {
 
 .bayan__input:checked ~ .bayan__label .meme__content {
     display: block;
+}  
+
+.bayan__input:checked ~ .bayan__label .meme__img {
+   animation: emergence .5s;
 }  
  
 
@@ -60,7 +67,17 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 5px;
-   
+}
+
+@keyframes emergence {
+    from {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* 
