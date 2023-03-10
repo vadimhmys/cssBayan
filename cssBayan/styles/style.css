@@ -37,9 +37,7 @@ body {
 }
 
 .bayan__item {
-    border: 1px solid #35225F;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    border-top: 1px solid #35225F;
 }
 
 .bayan__item:hover {
