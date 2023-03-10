@@ -54,6 +54,11 @@ body {
     position: absolute;
 }
 
+.bayan__input:checked ~ .bayan__title{
+    color: #fff;
+    text-shadow: 2px 2px 2px #35225F;
+}
+
 .bayan__input:checked ~ .bayan__content{
     display: block;
 }
