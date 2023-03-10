@@ -36,7 +36,14 @@ body {
 .bayan__title {
     display: block;
     padding: 10px 15px;
-    color: #fff;
+    color: #000;
+    transition: background .3s, color 0.3s;
+}
+
+.bayan__title:hover {
+    cursor: pointer;
+    background: #35225F;
+    color:#fff;
 }
 
 .bayan__content {
