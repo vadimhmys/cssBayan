@@ -7,11 +7,63 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #AAB0C8;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     font-weight: bold;
 }
 
+.bayan {
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.bayan__item {
+    border-top: 1px solid #35225F;
+}
+
+.bayan__input {
+    appearance: none;
+    -webkit-appearance: none;
+    display: none;
+}
+
+.bayan__input:checked ~ .bayan__label .meme__header{
+    background-color: #35225F;
+    color: #fff;
+}
+
+ .bayan__input:checked ~ .bayan__label .meme__icon {
+    transform: rotate(180deg);
+}
+
+.bayan__input:checked ~ .bayan__label .meme__content {
+    display: block;
+}  
+ 
+
+.meme__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: #000;
+}
+
+.meme__content {
+    display: none;
+    background-color: #697191;
+    padding: 10px 0;
+}
+
+.meme__img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+   
+}
+
+/* 
 .bayan {
     max-width: 300px;
     margin: 20px auto;
@@ -38,10 +90,23 @@ body {
     cursor: pointer;
 }
 
+.bayan__item:hover .bayan__title{
+    background-color: #35225F;
+}
+
+
+.bayan__item:hover .bayan__content{
+    display: block;
+}
+ 
 .bayan__input {
     appearance: none;
     -webkit-appearance: none;
     display: none;
+}
+
+.bayan__input:checked ~ .bayan__title {
+    background-color: #35225F;
 }
 
 .bayan__input:checked ~ .bayan__title .bayan__title-text {
@@ -86,4 +151,5 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 5px;
-}
+   
+} */
