@@ -60,14 +60,14 @@ body {
 }
 
 .meme__img {
-    width: 250px;
+    width: 16rem;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
 }
 
 @keyframes emergence {
-    from {margin-bottom: -50px;}
+    from {margin-bottom: -3rem;}
     to {margin-bottom: 0;}
 }
 
@@ -139,7 +139,7 @@ body {
 
     .bayan__label:hover .meme__content {
         display: block;
-        margin-bottom: -50px;
+        margin-bottom: -3rem;
         animation: emergence 1s forwards, fadeIn 1s forwards;
     }
 
@@ -157,7 +157,7 @@ body {
     }  
 
     .meme__img {
-        width: 390px;
+        width: 24rem;
     } 
 }
 
@@ -168,7 +168,7 @@ body {
 
     .bayan {
         max-width: 60%;
-        margin-top: 50px;
+        margin-top: 3rem;
     }
 
      .meme__icon {
@@ -204,7 +204,7 @@ body {
 
     .bayan__label:hover .meme__content {
         display: block;
-        margin-bottom: -50px;
+        margin-bottom: -3rem;
         animation: emergence 1s forwards, fadeIn 1s forwards;
     }
 
@@ -222,6 +222,6 @@ body {
     }  
 
     .meme__img {
-        width: 390px;
+        width: 24rem;
     } 
 }
