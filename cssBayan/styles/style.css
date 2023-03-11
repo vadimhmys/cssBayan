@@ -112,6 +112,14 @@ body {
 
     .bayan:hover .meme__icon {
         opacity: 1;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .bayan:hover .meme__text {
+        color: #fff;
+        text-shadow: 2px 2px 2px #35225F;
+        transition: 0.3s;
     }
 
     .bayan__label:hover .meme__header {
@@ -126,7 +134,7 @@ body {
 
     .bayan__label:hover .meme__icon {
         color:#fff;
-        transition:color .3s;
+        transition: color .3s;
     }
 
     .bayan__label:hover .meme__content {
