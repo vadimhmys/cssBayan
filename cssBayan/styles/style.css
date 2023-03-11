@@ -92,7 +92,7 @@ body {
     }
 }
 
-@media (min-width: 820px) and (max-width: 1920px) {
+@media screen and (min-width: 820px) and (max-width: 1920px) {
     body {
         font-size: 18px;
     }
@@ -170,6 +170,56 @@ body {
         max-width: 60%;
         margin-top: 50px;
     }
+
+     .meme__icon {
+        opacity: 0;
+    }
+
+    .bayan:hover .meme__icon {
+        opacity: 1;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .bayan:hover .meme__text {
+        color: #fff;
+        text-shadow: 2px 2px 2px #35225F;
+        transition: 0.3s;
+    }
+
+    .bayan__label:hover .meme__header {
+        background: #35225F;
+        transition: .5s;
+    }
+
+    .bayan__label:hover .meme__text {
+        color:#fff;
+        transition: .3s;
+    }
+
+    .bayan__label:hover .meme__icon {
+        color:#fff;
+        transition: color .3s;
+    }
+
+    .bayan__label:hover .meme__content {
+        display: block;
+        margin-bottom: -50px;
+        animation: emergence 1s forwards, fadeIn 1s forwards;
+    }
+
+    .bayan__label:active {
+        opacity: 0.5;
+    }
+
+    .bayan__input:checked ~ .bayan__label:hover .meme__content {
+        animation: none; 
+        margin-bottom: 0;
+    }
+
+    .bayan__input:checked ~ .bayan__label .meme__img {
+        animation: none;
+    }  
 
     .meme__img {
         width: 390px;
