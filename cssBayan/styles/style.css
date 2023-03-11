@@ -7,14 +7,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #AAB0C8;
-    font-size: 14px;
+    font-size: 0.8rem;
     line-height: 1.4;
     font-weight: bold;
 }
 
 .bayan {
-    max-width: 300px;
-    margin: 20px auto;
+    max-width: 90%;
+    margin: 1.3rem auto;
 }
 
 .bayan__item {
@@ -49,14 +49,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 0.7rem 1rem;
     color: #000;
 }
 
 .meme__content {
     display: none;
     background-color: #697191;
-    padding: 10px 0;
+    padding: 0.7rem 0;
 }
 
 .meme__img {
@@ -84,7 +84,7 @@ body {
 
 @media (min-width: 321px) and (max-width:820px) {
     body {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .bayan {
@@ -94,12 +94,12 @@ body {
 
 @media screen and (min-width: 820px) and (max-width: 1920px) {
     body {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     .bayan {
         max-width: 70%;
-        margin-top: 40px;
+        margin-top: 4rem;
     }
 
     .bayan__label:hover {
@@ -163,7 +163,7 @@ body {
 
 @media (min-width: 1920px) {
     body {
-        font-size: 20px;
+        font-size: 1.4rem;
     }
 
     .bayan {
