@@ -66,7 +66,7 @@ body {
     border-radius: 5px;
 }
 
-@keyframes emergence{
+@keyframes emergence {
     from {margin-bottom: -50px;}
     to {margin-bottom: 0;}
 }
@@ -106,9 +106,27 @@ body {
         cursor: pointer;
     }
 
+    .meme__icon {
+        opacity: 0;
+    }
+
+    .bayan:hover .meme__icon {
+        opacity: 1;
+    }
+
     .bayan__label:hover .meme__header {
         background: #35225F;
         transition: .5s;
+    }
+
+    .bayan__label:hover .meme__text {
+        color:#fff;
+        transition: .3s;
+    }
+
+    .bayan__label:hover .meme__icon {
+        color:#fff;
+        transition:color .3s;
     }
 
     .bayan__label:hover .meme__content {
@@ -145,96 +163,3 @@ body {
         width: 390px;
     } 
 }
-
-
-
-/* 
-.bayan {
-    max-width: 300px;
-    margin: 20px auto;
-}
-
-.bayan:hover .bayan__title-text {
-    color: #fff;
-    transition: .3s;
-    text-shadow: 2px 2px 2px #35225F;
-}
-
-.bayan:hover .bayan__title-icon {
-    display: block;
-    color: #fff;
-    opacity: 1;
-    transition: opacity .3s;
-}
-
-.bayan__item {
-    border-top: 1px solid #35225F;
-}
-
-.bayan__item:hover {
-    cursor: pointer;
-}
-
-.bayan__item:hover .bayan__title{
-    background-color: #35225F;
-}
-
-
-.bayan__item:hover .bayan__content{
-    display: block;
-}
- 
-.bayan__input {
-    appearance: none;
-    -webkit-appearance: none;
-    display: none;
-}
-
-.bayan__input:checked ~ .bayan__title {
-    background-color: #35225F;
-}
-
-.bayan__input:checked ~ .bayan__title .bayan__title-text {
-    color: #fff;
-    text-shadow: 2px 2px 2px #35225F;
-}
-
-.bayan__input:checked ~ .bayan__title .bayan__title-icon {
-    transform: rotate(180deg);
-}
-
-.bayan__input:checked ~ .bayan__content{
-    display: block;
-}
-
-.bayan__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    color: #000;
-    transition: background .3s, color 0.3s;
-}
-
-.bayan__title:hover {
-    cursor: pointer;
-    background: #35225F;
-}
-
-.bayan__title-icon {
-    opacity: 0;
-}
-
-.bayan__content {
-    display: none;
-    background-color: #697191;
-    padding: 10px 0;
-}
-
-.bayan__img {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-   
-} */
