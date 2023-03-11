@@ -143,6 +143,10 @@ body {
         animation: emergence 1s forwards, fadeIn 1s forwards;
     }
 
+    .bayan__label:active {
+        opacity: 0.5;
+    }
+
     .bayan__input:checked ~ .bayan__label:hover .meme__content {
         animation: none; 
         margin-bottom: 0;
