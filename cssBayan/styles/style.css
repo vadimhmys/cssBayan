@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+	user-select: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #AAB0C8;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.bayan {
+    max-width: 90%;
+    margin: 1.3rem auto;
+}
+
+.bayan__item {
+    border-top: thin solid #35225F;
+}
+
+.bayan__input {
+    appearance: none;
+    -webkit-appearance: none;
+    display: none;
+}
+
+.bayan__input:checked ~ .bayan__label .meme__header{
+    background-color: #35225F;
+    color: #fff;
+    transition: .5s;
+}
+
+ .bayan__input:checked ~ .bayan__label .meme__icon {
+    transform: rotate(180deg);
+}
+
+.bayan__input:checked ~ .bayan__label .meme__content {
+    display: block;
+}  
+
+.bayan__input:checked ~ .bayan__label .meme__img {
+   animation: fadeIn .5s;
+}  
+ 
+.meme__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    color: #000;
+}
+
+.meme__content {
+    display: none;
+    background-color: #697191;
+    padding: 0.7rem 0;
+}
+
+.meme__img {
+    width: 16rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.4rem;
+}
+
+@keyframes emergence {
+    from {margin-bottom: -3rem;}
+    to {margin-bottom: 0;}
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 321px) and (max-width:820px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .bayan {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 1920px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .bayan {
+        max-width: 70%;
+        margin-top: 4rem;
+    }
+
+    .bayan__label:hover {
+        cursor: pointer;
+    }
+
+    .meme__icon {
+        opacity: 0;
+    }
+
+    .bayan:hover .meme__icon {
+        opacity: 1;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .bayan:hover .meme__text {
+        color: #fff;
+        text-shadow: 2px 2px 2px #35225F;
+        transition: 0.3s;
+    }
+
+    .bayan__label:hover .meme__header {
+        background: #35225F;
+        transition: .5s;
+    }
+
+    .bayan__label:hover .meme__text {
+        color:#fff;
+        transition: .3s;
+    }
+
+    .bayan__label:hover .meme__icon {
+        color:#fff;
+        transition: color .3s;
+    }
+
+    .bayan__label:hover .meme__content {
+        display: block;
+        margin-bottom: -3rem;
+        animation: emergence 1s forwards, fadeIn 1s forwards;
+    }
+
+    .bayan__label:active {
+        opacity: 0.5;
+    }
+
+    .bayan__input:checked ~ .bayan__label:hover .meme__content {
+        animation: none; 
+        margin-bottom: 0;
+    }
+
+    .bayan__input:checked ~ .bayan__label .meme__img {
+        animation: none;
+    }  
+
+    .meme__img {
+        width: 24rem;
+    } 
+}
+
+@media (min-width: 1920px) {
+    body {
+        font-size: 1.4rem;
+    }
+
+    .bayan {
+        max-width: 60%;
+        margin-top: 3rem;
+    }
+
+     .meme__icon {
+        opacity: 0;
+    }
+
+    .bayan:hover .meme__icon {
+        opacity: 1;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    .bayan:hover .meme__text {
+        color: #fff;
+        text-shadow: 0.2rem 0.2rem 0.2rem #35225F;
+        transition: 0.3s;
+    }
+
+    .bayan__label:hover .meme__header {
+        background: #35225F;
+        transition: .5s;
+    }
+
+    .bayan__label:hover .meme__text {
+        color:#fff;
+        transition: .3s;
+    }
+
+    .bayan__label:hover .meme__icon {
+        color:#fff;
+        transition: color .3s;
+    }
+
+    .bayan__label:hover .meme__content {
+        display: block;
+        margin-bottom: -3rem;
+        animation: emergence 1s forwards, fadeIn 1s forwards;
+    }
+
+    .bayan__label:active {
+        opacity: 0.5;
+    }
+
+    .bayan__input:checked ~ .bayan__label:hover .meme__content {
+        animation: none; 
+        margin-bottom: 0;
+    }
+
+    .bayan__input:checked ~ .bayan__label .meme__img {
+        animation: none;
+    }  
+
+    .meme__img {
+        width: 24rem;
+    } 
+}
