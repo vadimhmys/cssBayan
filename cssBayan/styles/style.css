@@ -18,7 +18,7 @@ body {
 }
 
 .bayan__item {
-    border-top: 1px solid #35225F;
+    border-top: thin solid #35225F;
 }
 
 .bayan__input {
@@ -63,7 +63,7 @@ body {
     width: 16rem;
     display: block;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 0.4rem;
 }
 
 @keyframes emergence {
@@ -183,7 +183,7 @@ body {
 
     .bayan:hover .meme__text {
         color: #fff;
-        text-shadow: 2px 2px 2px #35225F;
+        text-shadow: 0.2rem 0.2rem 0.2rem #35225F;
         transition: 0.3s;
     }
 
